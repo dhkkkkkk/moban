@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"px\main.o"
+"px\gpio.o"
+"px\tim.o"
+"px\usart.o"
+"px\stm32f1xx_it.o"
+"px\stm32f1xx_hal_msp.o"
+"px\stm32f1xx_hal_gpio_ex.o"
+"px\stm32f1xx_hal_tim.o"
+"px\stm32f1xx_hal_tim_ex.o"
+"px\stm32f1xx_hal.o"
+"px\stm32f1xx_hal_rcc.o"
+"px\stm32f1xx_hal_rcc_ex.o"
+"px\stm32f1xx_hal_gpio.o"
+"px\stm32f1xx_hal_dma.o"
+"px\stm32f1xx_hal_cortex.o"
+"px\stm32f1xx_hal_pwr.o"
+"px\stm32f1xx_hal_flash.o"
+"px\stm32f1xx_hal_flash_ex.o"
+"px\stm32f1xx_hal_exti.o"
+"px\stm32f1xx_hal_uart.o"
+"px\startup_stm32f10x_hd.o"
+"px\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "PX\PX.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "./PX/\PX.map" -o PX\PX.axf

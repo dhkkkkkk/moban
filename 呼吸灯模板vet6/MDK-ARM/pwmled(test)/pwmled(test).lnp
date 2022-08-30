@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"pwmled(test)\main.o"
+"pwmled(test)\gpio.o"
+"pwmled(test)\tim.o"
+"pwmled(test)\stm32f1xx_it.o"
+"pwmled(test)\stm32f1xx_hal_msp.o"
+"pwmled(test)\stm32f1xx_hal_gpio_ex.o"
+"pwmled(test)\stm32f1xx_hal_tim.o"
+"pwmled(test)\stm32f1xx_hal_tim_ex.o"
+"pwmled(test)\stm32f1xx_hal.o"
+"pwmled(test)\stm32f1xx_hal_rcc.o"
+"pwmled(test)\stm32f1xx_hal_rcc_ex.o"
+"pwmled(test)\stm32f1xx_hal_gpio.o"
+"pwmled(test)\stm32f1xx_hal_dma.o"
+"pwmled(test)\stm32f1xx_hal_cortex.o"
+"pwmled(test)\stm32f1xx_hal_pwr.o"
+"pwmled(test)\stm32f1xx_hal_flash.o"
+"pwmled(test)\stm32f1xx_hal_flash_ex.o"
+"pwmled(test)\stm32f1xx_hal_exti.o"
+"pwmled(test)\startup_stm32f40_41xxx.o"
+"pwmled(test)\system_stm32f1xx.o"
+--strict --scatter "pwmled(test)\pwmled(test).sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "./pwmled(test)/\pwmled(test).map" -o pwmled(test)\pwmled(test).axf

@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"oled(test)\main.o"
+"oled(test)\gpio.o"
+"oled(test)\stm32f1xx_it.o"
+"oled(test)\stm32f1xx_hal_msp.o"
+"oled(test)\oled.o"
+"oled(test)\stm32f1xx_hal_gpio_ex.o"
+"oled(test)\stm32f1xx_hal_tim.o"
+"oled(test)\stm32f1xx_hal_tim_ex.o"
+"oled(test)\stm32f1xx_hal.o"
+"oled(test)\stm32f1xx_hal_rcc.o"
+"oled(test)\stm32f1xx_hal_rcc_ex.o"
+"oled(test)\stm32f1xx_hal_gpio.o"
+"oled(test)\stm32f1xx_hal_dma.o"
+"oled(test)\stm32f1xx_hal_cortex.o"
+"oled(test)\stm32f1xx_hal_pwr.o"
+"oled(test)\stm32f1xx_hal_flash.o"
+"oled(test)\stm32f1xx_hal_flash_ex.o"
+"oled(test)\stm32f1xx_hal_exti.o"
+"oled(test)\system_stm32f1xx.o"
+"oled(test)\startup_stm32f10x_hd.o"
+--library_type=microlib --strict --scatter "oled(test)\oled(test).sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "./oled(test)/\oled(test).map" -o oled(test)\oled(test).axf
